@@ -9,6 +9,7 @@
             Console.WriteLine("-------------------------------------------");
             Console.WriteLine("");
 
+            // Name input
             Console.WriteLine("Enter your name: ");
             string name = Console.ReadLine();
 
@@ -65,8 +66,10 @@
 
             // Age conditionals
             Console.Write("Age Check:  ");
-            double doubleAge = Convert.ToDouble(age);
+            double doubleAge = Convert.ToDouble(age); // Convert age to double for drinking age validation
             double LEGAL_DRINKING_AGE = 21;
+
+            // Age validation
             if (doubleAge < 18)
             {
                 Console.Write("[ You are still a minor.  ]\n\n");
@@ -88,10 +91,10 @@
             }
             else
             {
-
                 Console.Write("[ You are a senior citizen. ]\n");
             }
 
+            
             Console.WriteLine("\n");
             string personalInfo = $"Personal Details Presentation: {name}, {age} years old, {height} meters tall.\n";
             Console.WriteLine(personalInfo);
